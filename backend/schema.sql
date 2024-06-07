@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS tasks;
+
+CREATE TABLE tasks (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    completed BOOLEAN NOT NULL DEFAULT false,
+    title TEXT NOT NULL,
+    description TEXT NOT NULL
+);
